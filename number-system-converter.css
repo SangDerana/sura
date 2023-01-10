@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+	
+
+
+
+body,
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: url('asset/kda.png');
+  min-height: 100vh;
+}
+
+main {
+  background-image: linear-gradient(
+    180deg,
+    #900092,
+    #1900ff,
+    rgb(35, 24, 44)
+  );
+  
+	
+  padding: 30px 30px;
+  border-radius: 20px;
+  opacity: 0.7;
+}
+h1 {
+  color: rgb(85, 255, 0);
+  
+  
+}
+
+#select-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+select {
+  margin: 10px 20px;
+  padding: 7px 15px;
+  outline: none;
+}
+
+input {
+  background-color: #fff;
+  min-width: 350px;
+  margin: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.5s;
+}
+
+input:focus {
+  box-shadow: 0px 6px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+#convert-button {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s transform;
+}
+
+
+
+#convert-button:active {
+  transform: scale(0.9);
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  float: left;
+  line-height: 100px;
+}
+nav ul li a {
+  text-decoration: none;
+  margin: 5px;
+  padding: 7px 15px;
+  color: navy;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+nav ul li a:hover {
+  color : #fff;
+  background-color: #ff00d9;
+}
+
+#error {
+  display: none;
+  color: rgb(174, 0, 255);
+  font-size: small;
+  margin: 0 0 10px 30px;
+  text-align: start;
+}
+
+#written-by-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 5px;
+}
+
+#written-by-container a {
+  color: #000;
+}
